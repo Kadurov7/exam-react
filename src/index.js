@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {ThemePravider} from "./components/store/ContextApi"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+   <ThemePravider>
+      <App/>
+   </ThemePravider>
+   
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
